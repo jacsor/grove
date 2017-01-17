@@ -23,7 +23,7 @@ plot posterior state probabilities.}
 A plot.
 }
 \description{
-This function plot on a tree the state of the latent variables.
+This function plots on a tree the state of each latent variable.
 }
 \examples{
 data <- GenerateSyntheticAnova(st.dev = 5, n.replicates = 5)
