@@ -32,7 +32,7 @@ PlotFun(data, p = c(0.025, 0.5, 0.975), band.type = "pointwise",
 A plot.
 }
 \description{
-This function plot the credible bounds of the denoised signal.
+This function plots the credible bounds of the denoised signal.
 }
 \examples{
 data <- wavethresh::DJ.EX(n = 512, noisy = TRUE, rsnr = 5)$doppler
