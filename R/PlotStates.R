@@ -1,6 +1,6 @@
 #' @title Function to plot the hidden states
 #'
-#' @description This function plot on a tree the state of the latent variables.
+#' @description This function plots on a tree the state of each latent variables.
 #'
 #' @param grove.obj Output from function \code{FAnova}.
 #' @param block Which block to plot.
