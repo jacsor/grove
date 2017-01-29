@@ -3,13 +3,13 @@
 #' @description This function performs the inverse discrete wavelet transform.
 #'
 #' @param grove.obj An object of class \code{grove}.
-#' @param x A vector with the value of the predictor. 
-#' @param include.C If \code{TRUE}, C is used to compute to reconstruct 
+#' @param x A vector of the values of a predictor. 
+#' @param include.C If \code{TRUE}, C is used for reconstructing
 #' the function.
-#' @param sample.C If \code{TRUE}, draws from C are used to recontruct 
+#' @param sample.C If \code{TRUE}, draws from C are used for recontructing
 #' the function.
 
-#' @return A matrix each raw represents a draw from the reconstructed signal.
+#' @return A matrix with each row representing a draw from the reconstructed signal.
 #' @export
 #' @examples
 #' data <- wavethresh::DJ.EX(n = 512, noisy = TRUE, rsnr = 5)$doppler
