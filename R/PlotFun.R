@@ -1,6 +1,6 @@
 #' Function to plot the denoised signal
 #'
-#' This function plot the credible bounds of the denoised signal.
+#' This function plots the credible bounds of the denoised signal.
 #'
 #' @param data Matrix of posterior samples.
 #' @param p Vector with the lower, center and upper quantile. 
