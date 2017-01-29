@@ -13,6 +13,9 @@
 #' @param method Method used for find maxmimum of marginal likelihood. 
 #' 
 #' @return An object of class \code{grove}.
+#' @references Ma L. and Soriano J. (2016) Efficient functional ANOVA 
+#' through wavelet-domain Markov groves. arXiv:1602.03990v2 [stat.ME]
+#' (\url{https://arxiv.org/abs/1602.03990v2}).
 #' @export
 #' @examples
 #' data <- wavethresh::DJ.EX(n = 512, noisy = TRUE, rsnr = 5)$doppler

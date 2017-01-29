@@ -39,11 +39,17 @@ This function carries out Bayesian functional ANOVA using the
 Normal Inverse Gamma Markov Grove method of Ma and Soriano (2016).
 }
 \examples{
+\dontrun{
 data <- GenerateSyntheticAnova(st.dev = 5, n.replicates = 5)
 W <- DWT(data$noisy.Y)
 X <- data$X
 ans <- FAnova(W, X, ~ 1 + factorA + factorB)
 denoised.data <- InvDWT(ans, x = c(0, 0, 1, 0))
-PlotFun(denoised.data)
+PlotFun(denoised.data)}
+}
+\references{
+Ma L. and Soriano J. (2016) Efficient functional ANOVA
+through wavelet-domain Markov groves. arXiv:1602.03990v2 [stat.ME]
+(\url{https://arxiv.org/abs/1602.03990v2}).
 }
 

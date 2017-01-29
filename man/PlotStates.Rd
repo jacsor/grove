@@ -26,12 +26,13 @@ A plot.
 This function plots on a tree the state of each latent variables.
 }
 \examples{
+\dontrun{
 data <- GenerateSyntheticAnova(st.dev = 5, n.replicates = 5)
 W <- DWT(data$noisy.Y)
 X <- data$X
 ans <- FAnova(W, X, ~ 1 + factorA + factorB)
 PlotStates(ans)
 PlotStates(ans, block = "factorA")
-PlotStates(ans, block = "factorB")
+PlotStates(ans, block = "factorB")}
 }
 
