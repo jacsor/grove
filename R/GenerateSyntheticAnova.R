@@ -1,11 +1,11 @@
 #' Generate synthetic functional ANOVA dataset
 #'
-#' This function generates a synthetic 3 factors functional ANOVA dataset.
+#' This function generates a synthetic 3-factor functional ANOVA dataset.
 #'
 #' @param st.dev The standard deviation of the error.
 #' @param n.replicates The number of replicates for each factor combination.
 #' 
-#' @return An list with the data without noise, the data with noise and the 
+#' @return A list containing the data without noise, the data with noise, and the 
 #' design matrix.
 #' @export
 #' @examples
