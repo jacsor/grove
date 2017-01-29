@@ -4,7 +4,7 @@
 #' Inverse Gamma Markov Tree method of Ma and Soriano (2016).
 #'
 #' @param W An object of class \code{DWT}.
-#' @param alpha Hyperparameter.
+#' @param alpha Hyperparameter controlling the global smoothness.
 #' @param nu Hyperparameter controlling variance heterogeneity. If \code{Inf},
 #' then the variance is identical for all nodes.
 #' @param n.samples Number of posterior draws.
