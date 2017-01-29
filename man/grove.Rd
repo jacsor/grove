@@ -7,6 +7,6 @@
 \title{grove: A package for functional denoising and functional ANOVA}
 \description{
 The grove package implements a wavelet-domain Bayesian hierarchical model for
-function analysis of variance.
+functional analysis of variance.
 }
 

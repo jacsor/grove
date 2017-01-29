@@ -10,7 +10,7 @@ Denoise(W, alpha = 0.5, nu = 5, n.samples = 500,
 \arguments{
 \item{W}{An object of class \code{DWT}.}
 
-\item{alpha}{Hyperparameter.}
+\item{alpha}{Hyperparameter controlling the global smoothness.}
 
 \item{nu}{Hyperparameter controlling variance heterogeneity. If \code{Inf},
 then the variance is identical for all nodes.}

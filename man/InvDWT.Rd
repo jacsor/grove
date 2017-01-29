@@ -9,16 +9,16 @@ InvDWT(grove.obj, x = NULL, include.C = TRUE, sample.C = FALSE)
 \arguments{
 \item{grove.obj}{An object of class \code{grove}.}
 
-\item{x}{A vector with the value of the predictor.}
+\item{x}{A vector of the values of a predictor.}
 
-\item{include.C}{If \code{TRUE}, C is used to compute to reconstruct
+\item{include.C}{If \code{TRUE}, C is used for reconstructing
 the function.}
 
-\item{sample.C}{If \code{TRUE}, draws from C are used to recontruct
+\item{sample.C}{If \code{TRUE}, draws from C are used for recontructing
 the function.}
 }
 \value{
-A matrix each raw represents a draw from the reconstructed signal.
+A matrix with each row representing a draw from the reconstructed signal.
 }
 \description{
 This function performs the inverse discrete wavelet transform.

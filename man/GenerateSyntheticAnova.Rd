@@ -12,11 +12,11 @@ GenerateSyntheticAnova(st.dev = 10, n.replicates = 5)
 \item{n.replicates}{The number of replicates for each factor combination.}
 }
 \value{
-An list with the data without noise, the data with noise and the
+A list containing the data without noise, the data with noise, and the
 design matrix.
 }
 \description{
-This function generates a synthetic 3 factors functional ANOVA dataset.
+This function generates a synthetic 3-factor functional ANOVA dataset.
 }
 \examples{
 data <- GenerateSyntheticAnova(st.dev = 5, n.replicates = 10)

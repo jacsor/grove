@@ -15,14 +15,14 @@ FAnova(W, X, formula, nu = 5, is.kappa.fixed = FALSE, gamma.kappa = 0.3,
 
 \item{formula}{An object of class formula.}
 
-\item{nu}{Hyperparameter.}
+\item{nu}{Hyperparameter controlling the heterogeneity in the noise variance.}
 
 \item{is.kappa.fixed}{If \code{TRUE}, gamma.kappa and eta.kappa are fixed.
-If \code{FALSE} gamma_kappa and eta_kappa are defined using Empirical Bayes.}
+If \code{FALSE} gamma_kappa and eta_kappa are determined using Empirical Bayes.}
 
-\item{gamma.kappa}{Hyperparameter.}
+\item{gamma.kappa}{Hyperparameter for the MT transition matrix.}
 
-\item{eta.kappa}{Hyperparameter.}
+\item{eta.kappa}{Hyperparameter for the MT transition matrix.}
 
 \item{n.samples}{Number of posterior draws.}
 
