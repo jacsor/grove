@@ -156,11 +156,9 @@ mat HMG::FullPrecision()
 
 // extract submatrix for computing marginal likelihood 
 mat HMG::Lambda(int j, int s)
-{
-  // if(s == 0)
-  //   cout << "error - Lambda s==0" << endl;    
+{  
   uvec ac = active_columns(s);  
-  uvec scale(1); scale(0)=(uint)j;
+  uvec scale(1); scale(0)=(unsigned int)j;
   return diagmat( FullLambda.submat(scale,ac) );
 }
 
@@ -515,7 +513,7 @@ std::vector<mat> HMG::Count_Sample_States(std::vector<NumericMatrix> StatesSampl
 {
   std::vector<mat> output(J);
   int n_samples = StatesSample.at(0).nrow();
-  for(unsigned j=0; j < J; j++)
+  for(unsigned int j=0; j < (unsigned int)J; j++)
   {
     mat v(tot_states, pow(2,j)); v.zeros();
     NumericMatrix temp = StatesSample.at(j);
