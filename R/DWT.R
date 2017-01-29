@@ -22,7 +22,7 @@ DWT <- function(data,
                 filter.number = 10, 
                 family = "DaubLeAsymm") {
   
-  if (sum(is(data) == c("numeric", "vector")) == 2) {
+  if (sum(methods::is(data) == c("numeric", "vector")) == 2) {
     data <- matrix(data, nrow = 1)
   }
   

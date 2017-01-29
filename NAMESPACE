@@ -2,6 +2,7 @@ useDynLib(grove)
 importFrom(grDevices, colorRampPalette)
 importFrom(graphics, axis, lines, plot, points, polygon,
            rect, text, title)
+importFrom(methods, is)
 importFrom(Rcpp, evalCpp)
 importFrom(stats, as.formula, formula, lm, mad,
            model.matrix, optim, quantile, rgamma, rnorm,

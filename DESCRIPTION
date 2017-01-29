@@ -11,6 +11,7 @@ Description: Functional denoising and functional ANOVA through wavelet-domain
   arXiv:1602.03990v2 [stat.ME].
 License: GPL (>= 3)
 Imports: 
+  methods,
   Rcpp (>= 0.11.2), 
   wavethresh
 LinkingTo: Rcpp, RcppArmadillo
