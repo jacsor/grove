@@ -6,11 +6,11 @@
 #' @param W An object of class \code{DWT}.
 #' @param X Design matrix.
 #' @param formula An object of class formula.
-#' @param nu Hyperparameter.
+#' @param nu Hyperparameter controlling the heterogeneity in the noise variance.
 #' @param is.kappa.fixed If \code{TRUE}, gamma.kappa and eta.kappa are fixed. 
-#' If \code{FALSE} gamma_kappa and eta_kappa are defined using Empirical Bayes.
-#' @param gamma.kappa Hyperparameter.
-#' @param eta.kappa Hyperparameter.
+#' If \code{FALSE} gamma_kappa and eta_kappa are determined using Empirical Bayes.
+#' @param gamma.kappa Hyperparameter for the MT transition matrix.
+#' @param eta.kappa Hyperparameter for the MT transition matrix.
 #' @param n.samples Number of posterior draws.
 #' @param transition.mode Type of transition. The two options are \code{Markov} 
 #' or \code{Independent}.
