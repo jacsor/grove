@@ -14,10 +14,10 @@ class HMG {
   
   private:
     mat X, FullLambda;
-    double alpha, beta;
     double a_0, b_0;
     int J, n_tot, tot_states, n_factors;
-    vec tau_par, eta_par, gamma_par, p;
+    vec p, tau_par, eta_par, gamma_par;
+    double alpha, beta;
     std::vector<mat> w;   
     std::vector<mat> Phi, Psi, PostStates, PriorStates;
     std::vector<cube> PostTrans;
