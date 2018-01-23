@@ -40,7 +40,9 @@ InvDWT <- function(grove.obj,
   m <- dim(D)[2] + 1 
   
   output <- matrix(NA, ncol = m, nrow = n_samp)
-  temp <- wd(rep(1, m))
+  filter.number <- grove.obj$data$W$filter.number
+  family <- grove.obj$data$W$family
+  temp <- wd(rep(1, m), filter.number=filter.number, family=family)
   
   y <- grove.obj$data$W$C
   X <- model.matrix(grove.obj$data$formula, grove.obj$data$X)
