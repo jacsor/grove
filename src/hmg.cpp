@@ -199,8 +199,8 @@ double HMG::prior_trans_elem(int j,  int s, int t)
   double out = 1.0;  
   for(int i=0; (i<n_factors && out>0) ; i++)
   {
-    vec temp1; temp1 << 1 <<  ( eta_par(i) * pow(2,-beta*j) );
-    vec temp2; temp2 << (1-gamma_par(i)) << ( eta_par(i) * pow(2,-beta*j) );
+    vec temp1({ 1, (eta_par(i) * pow(2,-beta*j)) });
+    vec temp2({ (1-gamma_par(i)), (eta_par(i) * pow(2,-beta*j)) });
   
     if (transition_mode == 1) { // Markov transition
       if( ((s >> i) & 1)==0 && ((t >> i) & 1)==0)
@@ -445,12 +445,12 @@ vec HMG::get_prior_null(vec init_state)
       output(s) = 0;         
     else
     {
-      double temp=0; vec temp2(2);
+      double temp=0; 
       for(int j=1; j<J; j++)
       {
         temp += pow(2,j)*log( 1 - eta_par(s)*pow(2,-beta*j) );
       }
-      temp2 << 1.0 - gamma_par(s) << eta_par(s) ;
+      vec temp2({ 1.0 - gamma_par(s), eta_par(s) });
       output(s) = ( init_state(s)*( 1- gamma_par(s) - min(temp2)  )   + (1-init_state(s))*( 1 - eta_par(s)) ) * exp(temp);
 
     }      
